@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Blog Posts</title>
+	</head>
+	<body>
+		{% if results %}
+			<h2>Results:</h2>
+			{% for result in results %}
+				<p>{{result.published_date}}</p>
+				<h3><a href="{{result.id}}">{{result.title}}</a></h3>
+				<p>{{result.content}}</p>
+				<br/>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

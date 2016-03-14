@@ -56,7 +56,7 @@ ROOT_URLCONF = 'techblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['techblog/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
